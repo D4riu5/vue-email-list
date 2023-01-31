@@ -23,8 +23,11 @@
         </header>
         <main>
             <ul>
-                <li>
-                    Static
+                <li v-if="!apiLoaded">
+                    Loading...
+                </li>
+                <li v-else v-for="email in emails">
+                    {{ email }}
                 </li>
             </ul>
         </main>
