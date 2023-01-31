@@ -26,8 +26,8 @@
                 <li v-if="!apiLoaded">
                     Loading...
                 </li>
-                <template v-for="email in emails">
-                    <li v-else>
+                <template v-else>
+                    <li v-for="email in emails">
                         {{ email }}
                     </li>
                 </template>
